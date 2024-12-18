@@ -11,7 +11,7 @@ The network is composed of 12 blocks, with each block generating an upsampled im
 
 Each residual block is structured with two main flows. The first flow aims to minimize the residual between the low-resolution input image and the downsampled version. This helps recover information that may not have been fully captured by the earlier layers, enabling deeper layers to better learn the mapping. The second flow consists of upsampled maps that are progressively concatenated and then compressed through a 3x3 kernel convolution to match the original number of feature maps. This process forces the network to learn useful channels, progressively recovering finer details.
 
-After each compression, the feature maps are further compressed to propagate the information deeper into the network.
+After each compression, the feature maps are further forward pass through the skip-connections to propagate the information deeper into the network.
 
 
 
