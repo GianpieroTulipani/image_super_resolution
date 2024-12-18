@@ -13,7 +13,7 @@ Each residual block is structured with two main flows. The first flow aims to mi
 
 After each compression, the feature maps are further forward pass through the skip-connections to propagate the information deeper into the network.
 
-## Implemenattion Details
+## Implemenation Details
  For this experiments, has been used the DIV2K dataset for training, which is a high-quality (2K resolution) image
  restoration dataset containing 800 training images, 100 validation images, and 100 test images.
  To prepare the training data, has been synthesized the LR images by down-sampling the training HR images using
