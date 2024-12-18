@@ -1,0 +1,20 @@
+model:
+  in_channels: 128
+  out_channels: 128
+
+training:
+  num_epochs: 40
+  patience: 10
+  learning_rate: 1e-4
+  betas: [0.9, 0.999]
+  epsilon: 1e-8
+  lr_lambda_epoch_threshold: 20
+  lr_lambda_high: 1.0
+  lr_lambda_low: 0.1
+  data_range: 1.0
+
+dataset:
+  image_size: 128
+  num_patches: 16
+  batch_size: 16
+  image_scale: 2
