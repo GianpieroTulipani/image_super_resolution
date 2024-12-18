@@ -35,7 +35,10 @@ After each compression, the feature maps are further forward pass through the sk
  are crucial for generating sharp and detailed images.
 
 ## Results
-<img src="https://github.com/user-attachments/assets/be21ac4c-c9e6-4a52-83d0-8a0f6ec58119" width="800" height="400"/>
+
+![SR_test](https://github.com/user-attachments/assets/5a8482fc-2139-4456-8819-8e5ab2412142)
+
+![download1](https://github.com/user-attachments/assets/dd693920-35c2-43fe-ad7f-3cb783bba52b)
 
 <a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
