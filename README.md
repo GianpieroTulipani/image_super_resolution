@@ -11,8 +11,8 @@ A Deep Convolutional Neural Network for performing super resolution
  128-channel feature maps. All convolutional layers in this module use a kernel size of 3 × 3.
  The network comprises 12 blocks, with each block producing an upsampled image at one of three possible resolutions
  (8x, 4x, 2x). Additionally, each block generates a downsampled residual, which contains information not fully recovered
- by the preceding block. 
- 
+ by the preceding block. I've taken inspiration from the following paper [[Title of the Article](https://arxiv.org/abs/1704.03915)](https://arxiv.org/abs/1704.03915)
+
 <a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
 </a>
