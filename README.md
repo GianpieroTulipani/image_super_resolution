@@ -30,7 +30,7 @@ After each compression, the feature maps are further forward pass through the sk
  image. While Mean Squared Error (MSE) is widely used for its simplicity, it often leads to overly smooth images by
  focusing solely on pixel-wise differences. MSE minimizes global pixel error but fails to capture perceptually important
  details such as edges and textures, resulting in blurring and loss of sharpness.
- In contrast, the Structural Similarity Index (SSIM) [10] and its variant DSSIM (1- SSIM) offer a more perceptually
+ In contrast, the Structural Similarity Index (SSIM) and its variant DSSIM (1- SSIM) offer a more perceptually
  aligned loss function. DSSIM focuses on preserving structural details—such as edges, contrast, and luminance—which
  are crucial for generating sharp and detailed images.
 
