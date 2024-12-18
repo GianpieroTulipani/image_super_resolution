@@ -13,7 +13,29 @@ Each residual block is structured with two main flows. The first flow aims to mi
 
 After each compression, the feature maps are further forward pass through the skip-connections to propagate the information deeper into the network.
 
+## Implemenattion Details
+ For this experiments, has been used the DIV2K dataset for training, which is a high-quality (2K resolution) image
+ restoration dataset containing 800 training images, 100 validation images, and 100 test images.
+ To prepare the training data, has been synthesized the LR images by down-sampling the training HR images using
+ bicubic interpolation. The LR images are randomly cropped as 64 × 64 patch images which are then fed into the model
+ with the batch size of 16. The sizes of the ground-truth HR patch images are determined by the up-scaling factor.
+ The rectified linear units (Relu) is used as the activation function. To ensure numeric stability during training, I
+ scaled the pixel range of LR and HR images are normalized to the range [0, 1]. The Adam optimization algorithm
+ is employed with β1 = 0.9, β2 = 0.999, and ϵ = 10−8. The learning rate is initially set to 10−4 and decreased by a
+ factor of 10 after 30 epochs and then is kept unchanged . The experiments has been implemented using the Pytorch
+ framework and evaluated on the NVIDIA TESLA P100 GPU devices.
 
+## Loss Function
+ In Single Image Super-Resolution (SISR), the choice of loss function significantly affects the quality of the reconstructed
+ image. While Mean Squared Error (MSE) is widely used for its simplicity, it often leads to overly smooth images by
+ focusing solely on pixel-wise differences. MSE minimizes global pixel error but fails to capture perceptually important
+ details such as edges and textures, resulting in blurring and loss of sharpness.
+ In contrast, the Structural Similarity Index (SSIM) [10] and its variant DSSIM (1- SSIM) offer a more perceptually
+ aligned loss function. DSSIM focuses on preserving structural details—such as edges, contrast, and luminance—which
+ are crucial for generating sharp and detailed images.
+
+## Results
+<img src="https://github.com/user-attachments/assets/be21ac4c-c9e6-4a52-83d0-8a0f6ec58119" width="800" height="400"/>
 
 <a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
