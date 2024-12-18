@@ -40,6 +40,8 @@ After each compression, the feature maps are further forward pass through the sk
 
 ![download1](https://github.com/user-attachments/assets/dd693920-35c2-43fe-ad7f-3cb783bba52b)
 
+It achieves results comparable to the baseline, reaching 94% SSIM, despite being implemented in a limited setting and without data augmentation.
+
 <a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
 </a>
