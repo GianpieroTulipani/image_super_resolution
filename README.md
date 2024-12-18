@@ -22,7 +22,7 @@ After each compression, the feature maps are further forward pass through the sk
  The rectified linear units (Relu) is used as the activation function. To ensure numeric stability during training, I
  scaled the pixel range of LR and HR images are normalized to the range [0, 1]. The Adam optimization algorithm
  is employed with β1 = 0.9, β2 = 0.999, and ϵ = 10−8. The learning rate is initially set to 10−4 and decreased by a
- factor of 10 after 30 epochs and then is kept unchanged . The experiments has been implemented using the Pytorch
+ factor of 10 after 20 epochs and then is kept unchanged . The experiments has been implemented using the Pytorch
  framework and evaluated on the NVIDIA TESLA P100 GPU devices.
 
 ## Loss Function
