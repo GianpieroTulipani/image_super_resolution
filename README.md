@@ -4,7 +4,7 @@
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
 </a>
 
-<img src="https://github.com/user-attachments/assets/c1c18e7c-b2e7-46e9-8611-f5bf94257485" alt="Super Resolution Nework Architecture" width="500" height="500"/>
+<img src="https://github.com/user-attachments/assets/c1c18e7c-b2e7-46e9-8611-f5bf94257485" alt="Super Resolution Nework Architecture" width="800" height="400"/>
 
 A Deep Convolutional Neural Network for performing super resolution
 
